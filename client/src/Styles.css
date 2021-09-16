@@ -1,0 +1,657 @@
+@import url('https://fonts.googleapis.com/css2?family=Jura:wght@500&family=Poiret+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Handlee&family=Quicksand:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Asap&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Londrina+Outline&family=Sulphur+Point:wght@700&display=swap');
+
+body{
+    background-color: rgb(0, 0, 0);
+}
+
+.users{
+    list-style: none;
+    margin-top: 50px;
+    
+}
+
+.users li, .users p{
+    font-size: 35px;
+    opacity: 0.7;
+    font-family: 'Jura', sans-serif;
+    color: rgb(92, 92, 146);
+}
+
+.border-bottom{
+    max-width: 300px;
+    border:1px solid white ;
+    margin: auto;
+}
+
+.navbar a , .navbar-home a{
+    padding: 50px;
+    text-decoration: none;
+    color: #334568;
+    font-weight: 500;
+    font-size: 30px;
+    font-family: 'Jura', sans-serif;
+    opacity: .9;
+    transition: all 0.3s ease;
+    animation: fadeIn 1s ease;
+}
+
+.navbar a:hover{
+    opacity: .6;
+}
+
+.navbar,.navbar-home{
+    position: fixed;
+    max-width: 700px;
+    margin-left: 240px;
+    display: flex;
+}
+
+.navbar-home{
+    margin-top: -18px;
+    opacity: 1;
+    animation: fadeIn .5s ease;
+}
+
+.navbar-home a:hover{
+    opacity: 0.5;
+}
+
+.home-body h1{
+    position: fixed;
+    opacity: .9;
+    margin: 420px 0 0 190px;
+    font-size: 50px;
+    font-family: 'Noto Sans SC', sans-serif;
+    font-weight: 300;
+    letter-spacing: -.03125rem;
+    line-height: 1.21;
+    color: #334568;
+}
+
+@keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: .8;}
+ } 
+
+.girl{
+    float: left;
+    filter: grayscale(20%);
+    opacity: .3;
+    margin:2% 10% 0 1000px;
+}
+
+.girl img{
+    height: 870px;
+    width: auto;
+}
+
+
+.users em{
+    position: relative;
+    bottom: 30px;
+    font-size: 12px;
+    opacity: 0.5
+}
+
+.register,.login{
+    position: fixed;
+    margin-left: 390px;
+    margin-top: 330px;
+    border: 100px;
+}
+
+.login{
+    margin-top: 380px;
+}
+
+.register button,.login button{
+    border: rgb(31, 42, 59);
+    font-size: 15px;
+}
+
+.register a,.login a{
+    position: relative;
+    color: rgb(66, 109, 110);
+    text-decoration: none;
+    font-size: 15px;
+    top: 20px;
+    opacity: .8;
+}
+
+.register h3 , .login h3{
+    margin-top:-60px ;
+    font-size: 22px;
+    font-weight: 400;
+    opacity: .9;
+    color: rgb(66, 109, 110);
+};
+
+
+/* 
+.bird-logo{
+
+    height: 190px;
+    position: absolute;
+    left: 695px;
+    bottom: 444px;
+    opacity: 0.7;
+   
+} */
+
+.main-logo{
+    visibility: hidden;
+    position: absolute;
+    top: 3px;
+    left: 25px;
+    height: 150px;
+    width: 140px;
+    opacity: 0.7;
+    clip: rect(0px,200px,120px,0px);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+}
+
+#ham{
+    position: absolute;
+    font-size: 40px;
+    top:55px;
+    left: 41px;
+    opacity: .8;
+    color: rgb(55, 64, 97);
+    transform: scaleY(.8);
+    transition: all 0.5s ease;
+}
+
+#ham:hover{
+    opacity: .6;
+    transform: scaleY(1.2);
+}
+
+#acc-icon{
+    visibility: hidden;
+    color: rgb(67, 63, 97);
+    opacity: .05;
+    font-size: 350px;
+    position:fixed;
+    margin-top: 50px;
+    margin-left: 3%;
+    transition: ease 1s;
+}
+
+.accorloan-flex{
+    display: flex;
+    position: fixed;
+    min-width: 1400px;
+    margin-top: 280px;
+    margin-left: 27%;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.accorloan-flex h1{
+    font-size: 65px;
+    font-weight: 800;
+    padding: 50px;
+    opacity: .5;
+    cursor: pointer;
+    color: rgb(80, 90, 122);
+    border: .5px solid rgb(26, 43, 44);
+    border-radius: 20px;
+    font-family: 'Sulphur Point', sans-serif;
+    letter-spacing: 10px;
+}
+
+.accorloan-flex h1:first-child,.accorloan-flex h1:last-child{
+    transition: 1s ease;
+}
+
+.accorloan-flex h1:first-child:hover,.accorloan-flex h1:last-child:hover{
+    letter-spacing: 15px;
+    opacity: .3;
+}
+
+.bg{
+    background-color: rgb(0, 0, 0);
+}
+
+.user-navbar,.loan-navbar{
+    display: flex;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    max-width: 1400px;
+    min-height: 100px;
+    align-items: center;
+    margin-left: 500px;
+    margin-top: 15px;
+
+}
+.user-navbar p,.loan-navbar p{
+    cursor: pointer;
+    display: inline-flex;
+    padding-left:180px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    font-size: 30px;
+    font-family: 'Jura', sans-serif;
+    color:rgb(50, 56, 78);
+    transition: all 0.3s ease;
+}
+
+.user-navbar p:hover,.loan-navbar p:hover{
+    opacity: 0.6;
+}
+
+
+.loan-navbar{
+    margin-left: 580px;
+}
+
+.hi-flex{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 274px;
+    
+}
+
+.hi-flex h3{
+    font-size: 40px;
+    font-weight: 900;
+    padding-top: 20px;
+    padding-left: -20px;
+    color: rgb(80, 90, 122);
+    font-family: 'Poiret One', cursive;
+}
+.hi-flex img{
+    height: 70px;
+    width: auto;
+}
+
+.hi-flex div{
+    margin-top: 23px;
+}
+
+.hi-flex p{
+    font-size: 16px;
+    letter-spacing: 5px;
+    color: rgb(80, 90, 122);
+}
+
+.mainflex{
+    display: flex;
+    max-width: 450px;
+    min-height: 936px;
+    justify-content: center;
+    background-image: linear-gradient(to left,  rgb(11, 11, 15),rgb(28, 32, 43));
+}
+
+.balance,.quick-transfer,.history,.which-transfer,.benificiary-transfer,.interestcalc,.loan-div,.status-div{
+    display: flex;
+    opacity: 0.8;
+    min-height: 500px;
+    min-width: 900px;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 200px;
+    left: 750px;
+    border-radius: 10px;
+    background-image: linear-gradient(to left,  rgb(0, 0, 0),rgb(17, 20, 29));
+    animation: fadeIn 1s ease;
+}
+
+.loan-div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.loan-category{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-around;
+    cursor: pointer;
+}
+
+.loan-category h1{
+    padding: 50px;
+    color: rgb(115, 178, 180);
+    font-weight: 600;
+    opacity: .3;
+    border:1px solid rgb(62, 112, 114);
+    border-radius: 20px;
+    font-family: 'Quicksand', sans-serif;
+
+}
+
+::-webkit-datetime-edit-text { color: rgb(135, 139, 114); ; padding: 0 0.3em; }
+::-webkit-datetime-edit-month-field { color: rgb(141, 145, 126);opacity: .8; }
+::-webkit-datetime-edit-day-field { color: rgb(135, 139, 114);  opacity: .8;}
+::-webkit-datetime-edit-year-field { color: rgb(135, 139, 114); opacity: .8; }
+
+
+.history{
+    left: 680px;
+}
+
+.balance h1{
+    font-family: 'Quicksand', sans-serif;
+    font-size: 80px;
+    opacity: .7;
+    color: cadetblue;
+}
+
+.history{
+    font-size: 20px;
+    text-align: center;
+    background-image: linear-gradient(rgb(0, 0, 0),rgb(16, 19, 27));
+}
+
+.table{
+    text-align: left;
+    opacity: 0.8;
+}
+
+.table td,.table th{
+    padding-left: 60px;
+    padding-right: 40px;
+    font-weight: 900;
+    color: rgb(72, 96, 107);
+    border: 1px black;
+    font-family: 'Jura', sans-serif;
+
+}
+
+.quick-transfer input,select,.login input ,.register input,.benificiary-transfer input,.interestcalc input,.loan-div input{
+    font-size: 12px;
+    margin-bottom: 20px;
+    width: 400px;
+    opacity: .8;
+    font-weight: 900;
+    border: 0.1px black;
+    color:white;
+    background-color: rgb(17, 26, 26);
+    letter-spacing: 2px;
+    font-family: 'Jura', sans-serif;
+}
+
+.interestcalc input{
+    font-size: 12px;
+    padding: 20px;
+    height: 30px;
+}
+
+.register input,.login input{
+    width: 370px;
+    height: 50px;
+    font-size: 15px;
+}
+
+.quick-transfer button,.interestcalc button,.loan-div button{
+    border: rgb(24, 24, 32);
+    letter-spacing: 2px;
+    font-size: 16px;
+    font-family: 'Jura', sans-serif;
+
+}
+
+
+.loan-category h1{
+    transition: .5s ease-in-out;
+}
+
+.loan-category h1:hover{
+    letter-spacing: 3px;
+}
+
+.status-div{
+    flex-direction: column;
+}
+
+.status-div h1{
+    font-size: 4em;
+    color: rgb(49, 89, 90);
+    font-family: 'Jura', sans-serif;
+    opacity: 0.5;
+}
+
+.about-flex{
+    display: flex;
+    justify-content: center;
+    min-height: 800px;
+    min-width: 800px;
+    margin:auto;
+}
+
+.s-r-flex,.text-flex{
+    display: flex;
+    position: absolute;
+    min-width: 100%;
+    top:330px;
+    flex-direction: row;
+    justify-content:space-around;
+}
+
+.sender-svg,.receiver-svg{
+    filter: grayscale(70%);
+    opacity: 0.5;
+    height: 260px;
+    width: auto;
+}
+
+.text-flex{
+    top:620px;
+}
+
+.sender-text,.receiver-text{
+    font-size: 16px;
+    display: flex;
+    align-content: center;
+    max-width:400px;
+    font-family: 'Noto Sans SC', sans-serif;
+    letter-spacing: 2px;
+    opacity: .9;
+    color: rgb(104, 110, 133);
+}
+
+
+.about-title{
+    font-size: 45px; 
+    position: fixed;
+    top:460px;
+    letter-spacing: 2px;
+    opacity: .8;
+    font-family: 'Poiret One', cursive;
+    color: rgb(86, 96, 133);
+}
+
+.sep-line{
+    border: .1px solid rgb(109, 131, 204);
+    height: 120px;
+    opacity: .2;
+}
+
+.home-i-flex{
+    display: flex;
+    position: fixed;
+    top:32px;
+    left:96%;
+    flex-direction: column;
+    justify-content: center;
+    font-family: 'Poiret One', cursive;
+}
+
+.home-i-flex img{
+    height: 42px;
+    width: auto;
+    filter: grayscale(100%);
+    opacity: .2;
+    transition: ease 0.5s;
+}
+
+.home-i-flex p{
+    font-weight: 900;
+    letter-spacing: 1px;
+    color: rgb(74, 81, 105);
+    
+}
+
+.home-i-flex img:hover{
+    opacity: 0.1;
+}
+
+.logout{
+    filter: grayscale(60%);
+    opacity: .8;
+    width: 60px;
+    height: 57px;
+    position: fixed;
+    left: 1%;
+    top: 3%;
+    transition: ease 0.1s;
+}
+
+.logout:hover{
+    opacity: .5;
+}
+
+
+.fund-transfer-mode{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.fund-transfer-mode h1{
+    color: #334568;
+    font-weight: 500;
+    font-size: 27px;
+    font-family: 'Jura', sans-serif;
+    transition: 0.3s ease;
+    cursor:pointer;
+    letter-spacing: 1px;
+    opacity: .9;
+}
+
+.fund-transfer-mode h1:hover{
+    opacity: .5;
+}
+
+.fundtransfer{
+    height: 220px;
+    padding-left: 70px;
+    padding-right: 70px;
+    opacity: 0.7;
+    width: auto;
+    mix-blend-mode:color-burn;
+}
+
+.manage-beneficiary{
+    position: absolute;
+    cursor: pointer;
+    top: 92%;
+    left:76%;
+    font-weight: 800;
+    opacity: .7;
+    letter-spacing: 1px;
+    font-family: 'Jura', sans-serif;
+    color: #3b4863;
+    transition: ease 0.3s;
+}
+
+.manage-beneficiary:hover{
+    opacity: 0.4;
+}
+
+.closeX{
+    color: rgb(55, 68, 97);
+    position: absolute;
+    font-size: 14px;
+    cursor: pointer;
+    top:2%;
+    left:2%;
+}
+
+.which-loan h2{
+    font-size: 2.5rem;
+    position: absolute;
+    top:25px;
+    font-weight: 600;
+    left:50%;
+    transform: translate(-50%);
+    letter-spacing: 2px;
+    font-family: 'Jura', sans-serif;
+    color:rgb(68,68,68);
+    opacity: .9;
+}
+
+.loanform-div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+.loanform-div div{
+    padding: 10px;
+}
+
+.loan-submitted h1{
+    font-size: 4rem;
+    letter-spacing: 3px;
+    opacity: .6;
+}
+
+.closeX:hover{
+    opacity: 0.6;
+}
+
+.custom-svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-svg svg {
+    position: relative;
+    display: block;
+    width: calc(110% + 1.3px);
+    height: 414px;
+}
+
+.custom-svg .shape-fill {
+    fill: rgb(24, 26, 34);
+}
+
+.custom-shape-divider-bottom-1629701633 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1629701633 svg {
+    position: relative;
+    display: block;
+    width: calc(126% + 1.3px);
+    height: 441px;
+}
+
+.custom-shape-divider-bottom-1629701633 .shape-fill {
+    fill: rgb(33, 36, 48);
+}
