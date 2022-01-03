@@ -1,4 +1,9 @@
-### Hi there 👋
+### [ PERN ] stack project with all banking functionalities
+
+### a dynamic and interactive single page application that ensures smooth user experience
+
+### designed in a way that users can make the transactions secure and hassle free👋
+
 HOMEPAGE
 ![Home](https://user-images.githubusercontent.com/75119000/147927609-4018ba35-546b-48fc-87b8-e2a3e84ecc20.png)
 
